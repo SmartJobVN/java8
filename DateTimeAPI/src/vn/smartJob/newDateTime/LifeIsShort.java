@@ -1,3 +1,10 @@
+/*
+ * Copyright (C) 2016 - SmartJob.vn
+ * SmartJob VN proprietary/confidential. Use is subject to license terms.
+ * Website: http://smartJob.vn
+ * Email: contact@smartJob.vn
+ * Telephone: (84)-4-6294 44 47
+ */
 package vn.smartJob.newDateTime;
 
 import java.time.Clock;
@@ -15,6 +22,11 @@ import java.time.ZonedDateTime;
 import java.time.temporal.ChronoUnit;
 import java.time.temporal.Temporal;
 
+/**
+ * Application entry point.
+ *
+ * @author Do Nhu Vy
+ */
 public class LifeIsShort {
 
 	public static void main(String[] args) {
@@ -45,18 +57,18 @@ public class LifeIsShort {
 		Temporal ldt1 = LocalDateTime.of(1987, 10, 2, 0, 0, 0);
 		Temporal ldt2 = LocalDateTime.of(1970, 01, 01, 0, 0, 0);
 		Duration duration = Duration.between(ldt2, ldt1);
-		System.out.println("[7] Khoảng cách từ 01/01/1970 đến 02/10/1987 là " + 
+		System.out.println("[7] Khoảng cách từ 01/01/1970 đến 02/10/1987 là " +
 		"bao nhiêu ngày? " + duration.toDays());
 
 		// Bích Vân sinh vào ngày thứ 6483 tính từ mốc thời gian 1/1/1970.
 		LocalDate bichVanDateOfBirth = LocalDate.ofEpochDay(6483);
-		System.out.println("[8] Bích Vân sinh vào ngày thứ 6483 tính từ mốc " + 
+		System.out.println("[8] Bích Vân sinh vào ngày thứ 6483 tính từ mốc " +
 		"thời gian " + mileStone
 				+ ", tức là ngày " + bichVanDateOfBirth);
 
-		System.out.println("[9] Bích Vân sinh vào ngày thứ " + bichVanDateOfBirth.getDayOfMonth() + 
+		System.out.println("[9] Bích Vân sinh vào ngày thứ " + bichVanDateOfBirth.getDayOfMonth() +
 				" của tháng " + bichVanDateOfBirth.getMonth());
-		System.out.println("[10] Bích Vân sinh vào ngày thứ " + bichVanDateOfBirth.getDayOfYear() + 
+		System.out.println("[10] Bích Vân sinh vào ngày thứ " + bichVanDateOfBirth.getDayOfYear() +
 				" của năm " + bichVanDateOfBirth.getYear());
 		System.out.println("[11] Năm đó tháng " + bichVanDateOfBirth.getMonth() + " có "
 				+ bichVanDateOfBirth.lengthOfMonth() + " ngày.");
@@ -76,9 +88,9 @@ public class LifeIsShort {
 		System.out.println("[14] Ngày sinh VyDN tính theo giờ UTC/Greenwich: " + VyDN_DateOfBirth_UTC);
 
 		// Tính khoảng cách giữa hai điểm thời gian.
-		long vyDN_BichVan_Offset = Duration.between(VyDN_DateOfBirth, 
+		long vyDN_BichVan_Offset = Duration.between(VyDN_DateOfBirth,
 				ZonedDateTime.of(bichVanDateOfBirth, LocalTime.of(0, 0), HaNoi)).toDays();
-		System.out.println("[15] Hai người sinh cách nhau " + 
+		System.out.println("[15] Hai người sinh cách nhau " +
 				String.valueOf(vyDN_BichVan_Offset) + " ngày.");
 
 	}

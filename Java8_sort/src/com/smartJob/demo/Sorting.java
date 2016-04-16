@@ -1,3 +1,10 @@
+/*
+ * Copyright (C) 2016 - SmartJob.vn
+ * SmartJob VN proprietary/confidential. Use is subject to license terms.
+ * Website: http://smartJob.vn
+ * Email: contact@smartJob.vn
+ * Telephone: (84)-4-6294 44 47
+ */
 package com.smartJob.demo;
 
 import java.math.BigDecimal;
@@ -6,6 +13,11 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
+/**
+ * Sorting by traditional way.
+ *
+ * @author Do Nhu Vy
+ */
 public class Sorting {
 
 	// Khởi tạo cấu trúc dữ liệu.
@@ -58,5 +70,3 @@ public class Sorting {
 //Họ tên: AnhHT, Tuổi: 23, Lương: 800000 VND
 //Họ tên: KhanhND, Tuổi: 26, Lương: 17500000 VND
 //Họ tên: VyDN, Tuổi: 29, Lương: 750000 VND
-
-

@@ -1,4 +1,4 @@
-# java8
+# java8 new features
 Source code for these technical posts:
 
 ###### [Những điểm mới của Java 8 (phần 1: Lambda expression)](http://smartjob.vn/nhung-diem-moi-cua-java-8/)
